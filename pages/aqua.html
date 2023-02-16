@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Equipment</title>
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body dir="rtl">
+    
+    <div class="badyPrograms">
+        <header>
+            <div>
+                <nav>
+                    <div class="user">
+                        <span class="spanName">اسم المستخدم :</span>
+                        <span class="valueUser"></span>
+                    </div>
+                    <ul>
+                        <li><a href="../index.html">محطات المياه</a></li>
+                        <li><a href="#">حمام السباحه والاكوا</a></li>
+                        <li><a href="electric.html">جهود الكهرباء والمولدات</a></li>
+                    </ul>
+                    <h1>OYSTER<span style="color: rgb(100, 103, 104);">BAY</span></h1>
+                    <input type="submit" value="خروج" class="btnExit">
+                </nav>
+            </div>
+            
+        </header>
+        
+        
+    
+        <!-- start form2 -->
+        <div class="div2">
+            <form class="form" id="form2">
+                <div class="container">
+                    <h1>طلمبات حمام السباحة والاكوا</h1>
+                    <div class="boxes">
+                        <div class="box ">
+                            <h3>طلمبة حمام السباحه I</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="submit" class="btn save" value="حفظ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h3>طلمبة حمام السباحه H</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="submit" class="btn save" value="حفظ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h3>طلمبة الاكوا</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="submit" class="btn save" value="حفظ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+            <input type="button" class="btn btnShow" value="التفاصيل" >
+            
+            <div class="col-10 col-md-8 mt-5 showTable" style="display: none;">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th class="tableName" colspan="6">طلمبة حمام السباحه I</th>
+                            </tr>
+                            
+                            <tr>
+                                <th >م</th>
+                                <th class="userName" >اسم المستخدم</th>
+                                <th >التاريخ</th>
+                                <th >الوقت</th>
+                                <th class="notes" >ملاحظات</th>
+                                <th >حل المشكلة</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            
+                        </tbody>
+                    </table>
+                    <table border="1">
+                        <thead>
+                        <tr>
+                            <th class="tableName" colspan="6">طلمبة حمام السباحه H</th>
+                        </tr>
+                        <tr>
+                            <th >م</th>
+                            <th class="userName" >اسم المستخدم</th>
+                            <th >التاريخ</th>
+                            <th >الوقت</th>
+                            <th class="notes" >ملاحظات</th>
+                            <th >حل المشكلة</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <table border="1" >
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="6">طلمبة الاكوا</th>
+                        </tr>
+                        <tr>
+                            <th >م</th>
+                            <th class="userName">اسم المستخدم</th>
+                            <th >التاريخ</th>
+                            <th >الوقت</th>
+                            <th class="notes" >ملاحظات</th>
+                            <th >حل المشكلة</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <input type="button" class="btn btnHide" value="اخفاء" style="display: none;">
+            
+        </div>
+        <!-- end form2 -->
+    
+        
+    </div>
+   
+    
+    <!-- <script src="js/main.js"></script> -->
+    <script src="../js/aqua.js"></script>
+</body>
+
+</html>

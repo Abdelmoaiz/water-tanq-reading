@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Equipment</title>
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body dir="rtl">
+    <div class="login">
+        <div class="box-login">
+            <h1>يرجي تسجيل الدخول</h1>
+            <input type="text" value="عبدالمعز" placeholder="اسم المستخدم" class="user-login">
+            <input type="password" value="1234567890" placeholder="كلمة السر" class="pass-login">
+            <a href="index.html"><input type="submit" value="تسجيل الدخول" class="btn-login"></a>
+        </div>
+    </div>
+    <div class="badyPrograms">
+        <header>
+            <div>
+                <nav>
+                    <div class="user">
+                        <span class="spanName">اسم المستخدم :</span>
+                        <span class="valueUser"></span>
+                    </div>
+                    <ul>
+                        <li><a href="">محطات المياه</a></li>
+                        <li><a href="./pages/aqua.html">حمام السباحه والاكوا</a></li>
+                        <li><a href="./pages/electric.html">جهود الكهرباء والمولدات</a></li>
+                    </ul>
+                    <h1>OYSTER<span style="color: rgb(100, 103, 104);">BAY</span></h1>
+                    <input type="submit" value="خروج" class="btnExit">
+                </nav>
+            </div>
+            
+        </header>
+        
+        <!-- start prog -->
+        <div class="div1">
+            <form class="form">
+                <div class="container">
+                    <h1>Water Tank</h1>
+                    <div class="boxes">
+                        <div class="box box1">
+                            <h3>منسوب المياه</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div>
+                                        <span>ادخال المنسوب</span>
+                                        <input  type="number" value="" class=" txt insertText">
+                                    </div>
+                                    <div>
+                                        <span>م الحالي</span>
+                                        <input type="text" value="" class="txt txtNext" readonly>
+                                    </div>
+                                    <div>
+                                        <span>م السابق</span>
+                                        <input  type="text" value="" class="txt txtBack" readonly>
+                                    </div>
+                                    <div>
+                                        <span>ف المنسوب</span>
+                                        <input type="text" value="" class="txt txtTotal" readonly>
+                                    </div>
+                                </div>
+                                <textarea class="txtError" readonly></textarea>
+        
+                                <div class="InputInsert">
+                                    <input type="button" class="btn insertReadTanck" value="ادخال">
+                                    <input type="submit" class="btn readDelet" value="حذف">
+                                    <input type="submit" class="btn save" value="حفظ"> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" box box4">
+                            <h3>عداد الخزان</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div>
+                                        <span>ادخال القراءة</span>
+                                        <input  type="number" value="" class=" txt insertText">
+                                    </div>
+                                    <div>
+                                        <span> القراءة الحالية</span>
+                                        <input type="text" value="" class="txt txtNext" readonly>
+                                    </div>
+                                    <div>
+                                        <span>القراءة السابقة</span>
+                                        <input type="text" value="" class="txt txtBack" readonly>
+                                    </div>
+                                    <div>
+                                        <span>فرق القراءة</span>
+                                        <input type="text" value="" class="txt txtTotal"  readonly>
+                                    </div>
+                                </div>
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="button" class="btn insertReadTanck" value="ادخال">
+                                    <input type="submit" class="btn readDelet" value="حذف">
+                                    <input type="submit" class="btn save" value="حفظ"> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" box box5">
+                        <h3>عداد محطة المعالجة</h3>
+                        <div class="inputs">
+                            <input type="button" value="&radic;" class="btn yes">
+                            <input type="button" value="&times;" class="btn no tt">
+                            <div class="content">
+                                <div>
+                                    <span>ادخال القراءة</span>
+                                    <input  type="number" value="" class=" txt insertText">
+                                </div>
+                                <div>
+                                    <span>القراءة الحالية</span>
+                                    <input type="text" value="" class="txt txtNext" readonly>
+                                </div>
+                                <div>
+                                    <span>القراءة السابقة</span>
+                                    <input type="text" value="" class="txt txtBack" readonly>
+                                </div>
+                                <div>
+                                    <span>فرق القراءة</span>
+                                    <input type="text" value="" class="txt txtTotal"  readonly>
+                                </div>
+                            </div>
+                            <textarea class="txtError" readonly></textarea>
+        
+                            <div class="InputInsert">
+                                <input type="button" class="btn insertReadTanck" value="ادخال">
+                                <input type="submit" class="btn readDelet" value="حذف">
+                                <input type="submit" class="btn save" value="حفظ">  
+                            </div>
+                        </div>
+                        
+                        <div class="water">
+                            
+        
+        
+                        </div>
+                            
+                        </div>
+                        <div class="box box5">
+                            <h3>عربات المياه</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div class="car">
+                                        <span>النوع </span>
+                                        <div class="typeCar">
+                                            <div>
+                                                <input type="radio" name="NameCar" value="جرار" class="nameCar1"><br>
+                                                <input type="radio" name="NameCar" value="عربية" class="nameCar2">
+                                                <input type="text" value="" class="txt nameCar" style="display: none;">
+
+                                            </div>
+                                            <div>
+                                                <label class="labelTypeCar1">جرار </label><br>
+                                                <label class="labelTypeCar1">عربية</label>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div>
+                                        <span>اسم السواق</span>
+                                        <input type="text" value="" class="txt nameDrivCar">
+                                    </div>
+    
+                                    <div>
+                                        <span>حمولة العربية/ط</span>
+                                        <input type="number" value="" class="txt sizeCar">
+                                    </div>
+                                    <div>
+                                        <span>مكان التوريد</span>
+                                        <input type="text" value="" class="txt palce">
+                                    </div>
+                                </div>
+                                <textarea class="txtError txtView4" readonly></textarea>
+                                <div class="InputInsert">
+                                    <!-- <input type="button" class="btn insertDetailsCar" value="ادخال" > -->
+                                    <input type="submit" class="btn save" value="حفظ"> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" box box4">
+                            <h3>Boster</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes tt">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div>
+                                        <span> </span>
+                                        <input type="text" value="" class=" txt" readonly style="background-color: rgb(44, 139, 163);border: none;">
+                                    </div>
+                                </div>
+    
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="submit" class="btn save" value="حفظ"> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+                <input type="button" class="btn btnShow" value="التفاصيل" >
+                
+            <div class="col-10 col-md-8 mt-5 showTable" style="display: none;">
+                <table class="table table-striped table-dark" border="1">
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="10">منسوب المياه</th>
+                        </tr>
+                        <tr>  
+                            <th>م</th>
+                            <th>اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>القراءة الحالية</th>
+                            <th>القراءة السابقة</th>
+                            <th>فرق القراءة</th>
+                            <th>ملاحظات</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <table class="table table-striped table-dark" border="1">
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="10"> عداد الخزان</th>
+                        </tr>
+                        <tr>  
+                            <th>م</th>
+                            <th>اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>القراءة الحالية</th>
+                            <th>القراءة السابقة</th>
+                            <th>فرق القراءة</th>
+                            <th>ملاحظات</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <table class="table table-striped table-dark" border="1">
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="10">محطة المعالجة</th>
+                        </tr>
+                        <tr>  
+                            <th>م</th>
+                            <th>اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>القراءة الحالية</th>
+                            <th>القراءة السابقة</th>
+                            <th>فرق القراءة</th>
+                            <th>ملاحظات</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="10">عربات المياه</th>
+                        </tr>
+                        
+                        <tr>
+                            <th >م</th>
+                            <th class="userName" >اسم المستخدم</th>
+                            <th >التاريخ</th>
+                            <th >الوقت</th>
+                            <th >نوع العربيه</th>
+                            <th >اسم سائق </th>
+                            <th >حمولة العربية بالطن </th>
+                            <th >المكان</th>
+                            <th >ملاحظات </th>
+        
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <table class="table1"border="1">
+                    <thead >
+                        <tr>
+                            <th class="tableName" colspan="6">Boster</th>
+                        </tr>
+                        
+                        <tr>
+                            <th >م</th>
+                            <th class="userName" >اسم المستخدم</th>
+                            <th >التاريخ</th>
+                            <th >الوقت</th>
+                            <th >ملاحظات</th>
+        
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <input type="button" class="btn btnHide" value="اخفاء" style="display: none;">
+            
+        </div> 
+        <!-- End form1 -->
+    
+       
+    
+        
+    </div>
+   
+    
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

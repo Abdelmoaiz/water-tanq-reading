@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Equipment</title>
+    <!-- style css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body dir="rtl">
+    
+    <div class="badyPrograms">
+        <header>
+            <div>
+                <nav>
+                    <div class="user">
+                        <span class="spanName">اسم المستخدم :</span>
+                        <span class="valueUser"></span>
+                    </div>
+                    <ul>
+                        <li><a href="../index.html">محطات المياه</a></li>
+                        <li><a href="aqua.html">حمام السباحه والاكوا</a></li>
+                        <li><a href="#">جهود الكهرباء والمولدات</a></li>
+                    </ul>
+                    <h1>OYSTER<span style="color: rgb(100, 103, 104);">BAY</span></h1>
+                    <input type="submit" value="خروج" class="btnExit">
+                </nav>
+            </div>
+            
+        </header>
+        
+        <!-- start form3 -->
+        <div class="div3">
+            <form class="form">
+                <div class="container">
+                    <h1>محطة الكهرباء والمولدات</h1>
+                    <div class="boxes" style="gap: 20px;">
+                        <div class=" box ">
+                            <h3>جهد كهرباء الحكومة</h3>
+                            <div class="inputs">
+                                
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div>
+                                        <span>ادخل الجهد</span>
+                                        <input type="number" value="" class="txt insertVolt">
+                                    </div>
+                                    <div>
+                                        <span>الفولت الحالي</span>
+                                        <input type="text" value="" class="txt nowVolt" readonly>
+                                    </div>
+                                    <div>
+                                        <span>حالة الفولت</span>
+                                        <input type="text" value="" style="width: 120px;" class="txt statusVolt" readonly>
+                                    </div>
+                                </div>
+                                <textarea class="txtError" readonly></textarea>
+        
+                                <div class="InputInsert">
+                                    <input type="button" class="btn saveVolt" value="ادخال">
+                                    <input type="submit" class="btn deletVolt" value="حذف">
+                                    <input type="submit" class="btn save" value="حفظ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h3>المولدات</h3>
+                            <div class="inputs">
+                                <input type="button" value="&radic;" class="btn yes">
+                                <input type="button" value="&times;" class="btn no tt">
+                                <div class="content">
+                                    <div>
+                                        <span>عدد ساعات التشغيل</span>
+                                        <input type="number" value="" class="txt numberHour">
+                                    </div>
+        
+                                    <div>
+                                        <span>اجمالي عدد الساعات</span>
+                                        <input type="text" value="" class="txt totalHour" readonly>
+                                    </div>
+                                    <div>
+                                        <span>حالة الزيت</span>
+                                        <input type="text" value="" style="width: 150px;" class="txt alarmStatus" readonly>
+                                    </div>
+                                </div>
+                                <textarea class="txtError" readonly></textarea>
+                                <div class="InputInsert">
+                                    <input type="button" class="btn insertNumHour" value="ادخال">
+                                    <input type="submit" class="btn save" value="حفظ">
+                                    <input type="button" class="btn insertHour" value="تصفير" onclick="clearInput();" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </form>
+            <input type="button" class="btn btnShow" value="التفاصيل" >
+    
+            <div class="col-10 col-md-8 mt-5 showTable" style="display: none;">
+                <table border="1" >
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="7">جهد كهرباء الحكومة</th>
+                        </tr>
+                        
+                        <tr>
+                            <th >م</th>
+                            <th class="userName" >اسم المستخدم</th>
+                            <th >التاريخ</th>
+                            <th >الوقت</th>
+                            <th>القراءة الحالية</th>
+                            <th>الحالة</th>
+                            <th >حل المشكلة</th>
+    
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+    
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th class="tableName" colspan="8">المولدات</th>
+                        </tr>
+                        
+                        <tr>
+                            <th >م</th>
+                            <th class="userName">اسم المستخدم</th>
+                            <th>التاريخ</th>
+                            <th>الوقت</th>
+                            <th>مجموع ساعات التشغيل</th>
+                            <th>حالة الزيت</th>
+                            <th>حل المشكلة</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            <input type="button" class="btn btnHide" value="اخفاء" style="display: none;">
+                
+        </div>
+        <!-- End form3 -->
+    </div>
+   
+    
+    <!-- <script src="js/main.js"></script> -->
+    <script src="../js/electrics.js"></script>
+</body>
+
+</html>
